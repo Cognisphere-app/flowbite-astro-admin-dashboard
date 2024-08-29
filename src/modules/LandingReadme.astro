@@ -31,13 +31,13 @@ import { SITE_TITLE } from '../app/constants.js';
 					rel="noopener nofollow"
 					href="https://astro.build"
 					class="font-bold text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-violet-800 dark:from-pink-300 dark:to-violet-700 no-underline"
-					>Astro</a
+					>Cognisphere</a
 				>…
 				<br />meet <a
 					rel="noopener nofollow"
 					href="https://flowbite.com"
 					class="font-bold text-blue-600 dark:text-blue-500 no-underline"
-					>Flowbite</a
+					>Your New Home</a
 				>!
 			</p>
 
@@ -51,33 +51,8 @@ import { SITE_TITLE } from '../app/constants.js';
 				</Confettis>
 			</div>
 		</div>
-
-		<div class="flex justify-center w-full my-16">
-			<div set:html={FlowbiteLogo} class="svg-inline w-16 h-16" />
-		</div>
 	</header>
-
-	<section class="flex justify-center w-full pb-24">
-		<div class="w-full format dark:format-invert">
-			<Code
-				lang={'powershell' /* Looks cool */}
-				code={`git clone \\
-https://github.com/themesberg/flowbite-astro-admin-dashboard.git`}
-			/>
-		</div>
-	</section>
-
-	<article class="flex justify-center pt-32 pb-32">
-		<div class="w-full readme format dark:format-invert lg:format-lg">
-			<h1 class="text-center">
-				<!-- {readMe.getHeadings()[0].text} -->
-				{SITE_TITLE}
-			</h1>
-			<readMe.Content />
-		</div>
-	</article>
-</div>
-
+	
 <style>
 	/* Override in Markdown H1 title */
 	.readme :global(h1:nth-of-type(2)) {
